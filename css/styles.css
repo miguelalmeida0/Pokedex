@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+h1 span {
+    background-color: yellow;
+    color: inherit;
+}
+
+:root {
+  font-size: 30px;
+  display: inline;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  background-color: lightgray;
+  color: inherit;
+  padding: 10px;
+}
