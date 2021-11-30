@@ -27,8 +27,8 @@ return {
 // For Each loop that will run through the Pokemon names, and throw a message related to a Pokemon being bigger than 2 meters.
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-   document.write('<br>' + pokemonList[i].name + (' , height: ') + pokemonList[i].height);
-   if (pokemonList[i].height >= 2) {
+   document.write('<br>' + pokemon.name + (' , height: ') + pokemon.height);
+   if (pokemon.height >= 2) {
      document.write(' - Wow, that\'s big!');
    }
  });
