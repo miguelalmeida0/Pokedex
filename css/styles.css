@@ -46,3 +46,7 @@ button:hover {
    text-align: center;
    padding: 0rem;
 }
+
+li {
+  padding: 10px;
+}
