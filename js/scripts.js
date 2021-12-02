@@ -8,13 +8,13 @@ let pokemonRepository = (function (){
     {name:'Charmeleon', height: 1.1, types: ['fire', 'normal'] }
   ];
 
-  function add(pokemon) {
-    pokemonList.push(pokemon);
-  };
-
   function getAll() {
     return pokemonList;
   }
+
+  function add(pokemon) {
+    pokemonList.push(pokemon);
+  };
 
   function addListItem(pokemon) {
     let pokemonList = document.querySelector('.pokemon-list');
@@ -33,7 +33,7 @@ let pokemonRepository = (function (){
   }
 
   function showDetails (pokemon) {
-    console.log(pokemon.name);
+    console.log(pokemon);
   }
 
   return {
@@ -41,16 +41,11 @@ let pokemonRepository = (function (){
     getAll: getAll,
     addListItem: addListItem
   };
-
-  pokemonRepository.getAll().forEach(function(pokemon) {
-    document.write('<br>' + pokemon.name + (' , height: ') + pokemon.height);
-    if (pokemon.height >= 2) {
-      document.write(' - Wow, that\'s big!');
-    }
-  });
-
 })();
 
 // IIFE ends here.
 
 // For Each loop that will run through the Pokemon names, and throw a message related to a Pokemon being bigger than 2 meters.
+pokemonRepository.getAll().forEach(function(pokemon) {
+pokemonRepository.addListItem(pokemon);  
+});
