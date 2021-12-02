@@ -33,7 +33,7 @@ let pokemonRepository = (function (){
   }
 
   function showDetails (pokemon) {
-    console.log(pokemon);
+    console.log(pokemon.name);
   }
 
   return {
@@ -47,5 +47,5 @@ let pokemonRepository = (function (){
 
 // For Each loop that will run through the Pokemon names, and throw a message related to a Pokemon being bigger than 2 meters.
 pokemonRepository.getAll().forEach(function(pokemon) {
-pokemonRepository.addListItem(pokemon);  
+pokemonRepository.addListItem(pokemon);
 });
