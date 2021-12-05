@@ -30,11 +30,11 @@ let pokemonRepository = (function (){
           detailsUrl: item.url
         };
         add(pokemon);
-        console.log()
+        console.log();
       });
     }).catch(function (e) {
       console.error(e);
-    })
+    });
   }
 
   function loadDetails(item) {
