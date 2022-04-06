@@ -1,9 +1,0 @@
-This pokedex was built as a CareerFoundry's course project.
-
-It uses an API to show the initial 150 pokemon list, the original one.
-
-Project dependencies:
-
--JavaScript ES6.
--Bootstrap.
--jQuery
